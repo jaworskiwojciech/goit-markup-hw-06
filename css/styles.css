@@ -57,6 +57,7 @@ address {
 }
 .modal {
   position: relative;
+  padding: 40px;
   width: 528px;
   height: 581px;
   background-color: var(--white-background);
@@ -560,4 +561,14 @@ footer {
 /* ==========ICONS========== */
 .social-icon-footer {
   fill: var(--white-background);
+}
+/* ======FORM====== */
+.modal-header {
+  margin-block: 0px 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-font-color);
 }
