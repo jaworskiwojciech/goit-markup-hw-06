@@ -590,7 +590,7 @@ footer {
 .label {
   position: absolute;
   left: 0px;
-  top: -16px;
+  top: -17px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -630,4 +630,27 @@ fieldset:nth-child(4) {
   display: block;
   /* align-items: baseline; */
   margin-bottom: 20px;
+}
+.form-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+  margin-block: 0px 30px;
+  margin-inline: auto;
+}
+.checkbox {
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+}
+.form-description span {
+  padding-top: 3px;
+}
+.form-description a {
+  color: var(--blue-color);
 }
