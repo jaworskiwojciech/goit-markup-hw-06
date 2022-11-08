@@ -14,6 +14,8 @@
   --offer-description-background: rgba(47, 48, 58, 0.8);
   --overlay-background: rgba(33, 150, 243, 0.9);
   --grey-icon-color: #afb1b8;
+  --fieldset-border-color: rgba(33, 33, 33, 0.2);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
 }
 
 body {
@@ -59,7 +61,7 @@ address {
   position: relative;
   padding: 40px;
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   background-color: var(--white-background);
   margin: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -83,6 +85,8 @@ address {
 .close-x {
   fill: #000000;
 }
+
+/* ==========OTHER STYLES========== */
 
 .list-style {
   list-style-type: none;
@@ -571,4 +575,59 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-font-color);
+}
+.fieldset {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 28px;
+  padding-block: 14px;
+  padding-left: 15px;
+  border: 1px solid var(--fieldset-border-color);
+  border-radius: 4px;
+}
+.label {
+  position: absolute;
+  left: 0px;
+  top: -16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--contact-color);
+}
+.form-icon {
+  margin-right: 15px;
+}
+.input,
+.input-comment {
+  border: none;
+  width: 100%;
+}
+.input-comment {
+  outline: none;
+}
+.input:focus {
+  outline: none;
+}
+.input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--placeholder-color);
+}
+.fieldset:has(input:focus),
+.fieldset:focus {
+  border-color: var(--blue-color);
+}
+.fieldset:has(input:focus) {
+  fill: var(--blue-color);
+}
+fieldset:nth-child(4) {
+  height: 120px;
+  display: block;
+  /* align-items: baseline; */
+  margin-bottom: 20px;
 }
