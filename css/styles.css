@@ -719,4 +719,5 @@ fieldset:nth-child(4) {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--white-background);
+  cursor: pointer;
 }
