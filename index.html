@@ -98,12 +98,16 @@
                   />
                 </fieldset>
                 <div class="form-bottom-container">
-                  <p class="form-description">
-                    <input class="checkbox" type="checkbox" /><span
+                  <label class="form-description">
+                    <input class="checkbox" type="checkbox" />
+                    <svg class="checkmark">
+                      <use href="./images/icons.svg#tick"></use>
+                    </svg>
+                    <span class="acceptation"
                       >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
                       <a href="#">Politykę Prywatności.</a></span
                     >
-                  </p>
+                  </label>
                   <button class="form-button" type="submit">Wyślij</button>
                 </div>
               </form>
@@ -439,9 +443,10 @@
                 class="input newsletter-input"
                 placeholder="E-mail"
                 for="email"
+                name="email"
               />
             </fieldset>
-            <button type="button" class="newsletter-button" type="submit">
+            <button class="newsletter-button" type="submit">
               <span>Zapisz się</span
               ><svg class="newsletter-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>

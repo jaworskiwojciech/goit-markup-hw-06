@@ -633,6 +633,7 @@ fieldset:nth-child(4) {
   margin-bottom: 20px;
 }
 .form-description {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -642,14 +643,11 @@ fieldset:nth-child(4) {
   letter-spacing: 0.03em;
   color: var(--description-color);
   margin-block: 0px 30px;
-  margin-inline: auto;
+  cursor: pointer;
+  /* margin-inline: auto; */
 }
-.checkbox {
-  margin-right: 8px;
-  width: 16px;
-  height: 15px;
-}
-.form-description span {
+
+.form-description .acceptation {
   padding-top: 3px;
 }
 .form-description a {
@@ -672,6 +670,50 @@ fieldset:nth-child(4) {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+/* ==========CHECKBOX========== */
+
+.form-description input {
+  position: absolute;
+  cursor: pointer;
+  margin-right: 8px;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: -24px;
+  height: 16px;
+  width: 16px;
+  fill: white;
+  border: 1px solid #cccccc;
+  background-color: white;
+  transition: background-color var(--transition-duration) var(--cubic-bezier);
+}
+.form-description input:checked ~ .checkmark {
+  background-color: var(--blue-color);
+}
+.checkmark::after {
+  content: "";
+  position: absolute;
+  fill: #eee;
+  /* opacity: 0; */
+  transition: opacity var(--transition-duration) var(--cubic-bezier);
+}
+.form-description input:checked ~ .checkmark:after {
+  /* opacity: 1; */
+}
+.form-description .checkmark::after {
+  /* left: 4.5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); */
 }
 
 /* ==========NEWSLETTER========== */
