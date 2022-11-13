@@ -689,11 +689,14 @@ fieldset:nth-child(4) {
   height: 16px;
   width: 16px;
   fill: white;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--fieldset-border-color);
+  border-radius: 2px;
   background-color: white;
-  transition: background-color var(--transition-duration) var(--cubic-bezier);
+  transition: background-color var(--transition-duration) var(--cubic-bezier),
+    border-color var(--transition-duration) var(--cubic-bezier);
 }
 .form-description input:checked ~ .checkmark {
+  border-color: var(--blue-color);
   background-color: var(--blue-color);
 }
 .checkmark::after {
