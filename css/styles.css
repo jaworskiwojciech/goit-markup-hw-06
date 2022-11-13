@@ -699,25 +699,25 @@ fieldset:nth-child(4) {
   border-color: var(--blue-color);
   background-color: var(--blue-color);
 }
-.checkmark::after {
+/* .checkmark::after {
   content: "";
   position: absolute;
   fill: #eee;
-  /* opacity: 0; */
+  opacity: 0;
   transition: opacity var(--transition-duration) var(--cubic-bezier);
-}
-.form-description input:checked ~ .checkmark:after {
-  /* opacity: 1; */
-}
-.form-description .checkmark::after {
-  /* left: 4.5px;
+} */
+/* .form-description input:checked ~ .checkmark:after {
+  opacity: 1;
+} */
+/* .form-description .checkmark::after {
+  left: 4.5px;
   top: 1px;
   width: 5px;
   height: 10px;
   border: solid white;
   border-width: 0 2px 2px 0;
-  transform: rotate(45deg); */
-}
+  transform: rotate(45deg);
+} */
 
 /* ==========NEWSLETTER========== */
 
